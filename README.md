@@ -12,9 +12,6 @@ Get in contact with one of the developers via mail [f.jeanquartier[at]hci-kdd.or
 
 Read more in our publication [Use case driven evaluation of open databases for pediatric cancer research](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-018-0190-8)
 
-
-## Overview of the comparison ##
-
 We further provide an Excel and R-Script to foster open research. See [Adult-ped-comp2019.xlsx](Adult-ped-comp2019.xlsx) as well as [dbcomparison.R]{dbcomparison.R} for more on comparison data and calculations.
 
 
