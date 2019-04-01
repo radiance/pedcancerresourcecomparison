@@ -12,7 +12,7 @@ Get in contact with one of the developers via mail [f.jeanquartier[at]hci-kdd.or
 
 Read more in our publication [Use case driven evaluation of open databases for pediatric cancer research](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-018-0190-8)
 
-We further provide an Excel and R-Script to foster open research. See the [comparison table](adult-ped-comp2019.xlsx), the [R statitics script](dbcomparison.R)  as well as the [Figures](/Figures) for more on comparison data and calculations.
+We further provide an Excel and R-Script to foster open research. See the [comparison table](adult-ped-comp2019.xlsx), the [R statistics script](dbcomparison.R)  as well as the [Figures](/Figures) for more on comparison data and calculations.
 
 
 ## See also ##
@@ -23,4 +23,4 @@ We __encourage__ you to have a look at [cpm-cytoscape](https://github.com/davcem
 ## Acknowledgments ##
 
 We thank the [HOLZINGER GROUP](http://hci-kdd.org) for giving us the opportunity to get feedback on this research.
-We also thank all contributers to open data resources on pediatric cancer.
+We also thank all contributors to open data resources on pediatric cancer.
