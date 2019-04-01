@@ -22,10 +22,5 @@ We __encourage__ you to have a look at [cpm-cytoscape](https://github.com/davcem
 
 ## Acknowledgments ##
 
-We thank the CGV Institute of the University of Technology Graz for providing the demo server.
 We thank the [HOLZINGER GROUP](http://hci-kdd.org) for giving us the opportunity to get feedback on this research.
-We also thank all participants for their contributions to the development of components for cpm-cytoscape software.
-
-## License
-
-The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
+We also thank all contributers to open data resources on pediatric cancer.
