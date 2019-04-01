@@ -22,7 +22,6 @@ for (row in 1:nrow(numdf)) {
 plot(unlist(stdlist), xlab="gene symbol", ylab="median, standard deviation and average from mutation frequencies", type="b", pch=2, col="gray8", frame.plot=FALSE) #main="Median Distribution across genes for selected dbs"
 lines(unlist(medianlist), col="gray32", type="b", pch=5) #main="Standard Deviation Distribution across genes for selected dbs"
 lines(unlist(averagelist), col="black", type="b", pch=9) #main="Average/mean across genes for selected dbs"
-legend("topright", legend=c("median", "standard deviation ", "mean"), col=c(col="gray8", col="gray32", col="black"), pch=c(2,5,9), lty=2:2, cex=1, bty="n")
 
 # compare db to median
 cbiomed = list()
