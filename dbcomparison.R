@@ -2,23 +2,29 @@
 # Downloaded data from 4 selected pediatric databases 
 # median and standard deviation computation and plotting
 
-csvdata <- read.csv('~/Documents/ped-db-comparison.csv', header=TRUE, sep=";", quote = "", stringsAsFactors=FALSE) #as.is = 1 
+# if you would like to use a path for windows: csvdata <- read.csv('file:///C:/Documents/ped-db-100mutations-export.csv', header=TRUE, sep=";", quote = "", stringsAsFactors=FALSE) #as.is = 1 
+csvdata <- read.csv('~/Documents/ped-db-100mutations-export.csv', header=TRUE, sep=";", quote = "", stringsAsFactors=FALSE) #as.is = 1 
 numdf = as.data.frame.matrix(csvdata[2:5])
 
-# create list of medians and standard deviation
+# create list of medians, standard deviation and average
 medianlist = list()
 stdlist = list()
+averagelist = list()
 
 for (row in 1:nrow(numdf)) {
   x <- (numdf[row,])
   medianlist[row] <- median(unlist(x), na.rm = TRUE)
   stdlist[row] <- sd(unlist(x), na.rm = TRUE)
+  averagelist[row] <- mean(unlist(x), na.rm = TRUE)
 }
 
-# plot medians and standard deviation as barplot
-barplot(unlist(medianlist), main="Median Distribution across genes for selected dbs", xlab="median")
-barplot(unlist(stdlist), main="Standard Deviation Distribution across genes for selected dbs", xlab="standard deviation")
+# plot avarage/mean, median and standard deviation as barplot
+plot(unlist(stdlist), xlab="gene symbol", ylab="median, standard deviation and average from mutation frequencies", type="b", pch=2, col="gray8") #main="Median Distribution across genes for selected dbs"
+lines(unlist(medianlist), col="gray32", type="b", pch=5) #main="Standard Deviation Distribution across genes for selected dbs"
+lines(unlist(averagelist), col="black", type="b", pch=9) #main="Average/mean across genes for selected dbs"
+legend("topright", legend=c("median", "standard deviation", "mean"), col=c(col="gray8", col="gray32", col="black"), pch=c(2,5,9), lty=2:2, cex=1)
 
+# compare db to median
 cbiomed = list()
 pedcbiomed = list()
 pecanmed = list()
@@ -41,7 +47,7 @@ lines(xi, pedcbiomed, col="green")
 lines(xi, icgcmed, col="red")
 lines(xi, pecanmed, col="blue")
 
-
+#
 # Other Plotting examples
 #plot(cbiomed,pedcbiomed, main="Scatterplot of cbio vs. pedcbio") 
 #heatplot(csvdata)
@@ -67,3 +73,5 @@ lines(xi, pecanmed, col="blue")
 #install.packages("cowplot")
 #library("cowplot")
 #cowplot(comparemedians)
+#
+#etc.
