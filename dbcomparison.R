@@ -21,8 +21,8 @@ for (row in 1:nrow(numdf)) {
 
 # plot avarage/mean, median and standard deviation as barplot
 genelabels <- csvdata[1]
-plot(unlist(stdlist), xlab="gene symbol", ylab="median, standard deviation and average from mutation frequencies", type="b", pch=2, col="gray8", frame.plot=FALSE, xaxt="n", cex.axis=.5) #main="Median Distribution across genes for selected dbs"
-axis(1, at=1:100, labels=unlist(genelabels), las=2, cex=.3)
+plot(unlist(stdlist), xlab="gene symbol", ylab="median, standard deviation and average from mutation frequencies", type="b", pch=2, col="gray8", frame.plot=FALSE, xaxt="n") #main="Median Distribution across genes for selected dbs"
+axis(1, at=1:100, labels=unlist(genelabels), las=2, cex.axis=.5)
 lines(unlist(medianlist), col="gray32", type="b", pch=5) #main="Standard Deviation Distribution across genes for selected dbs"
 lines(unlist(averagelist), col="black", type="b", pch=9) #main="Average/mean across genes for selected dbs"
 legend("topright", legend=c("median", "standard deviation ", "mean"), col=c(col="gray8", col="gray32", col="black"), pch=c(2,5,9), lty=2:2, cex=1, bty="n")
