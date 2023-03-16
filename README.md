@@ -14,7 +14,7 @@ We present an approach to compare existing data resources on pediatric cancer ge
 Read more in our publication [Use case driven evaluation of open databases for pediatric cancer research](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-018-0190-8)
 
 We further provide an Excel and R-Script to foster open research. See the [comparison table](adult-ped-comp2019.xlsx), the [R statistics script](dbcomparison.R)  as well as the [Figures](/Figures) for more on comparison data and calculations.
-We plan to extend the available scripts. 
+We plan to extend the available scripts if we find new resources, but this may take a while. 
 
 
 ## See also ##
